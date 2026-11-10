@@ -1,0 +1,15 @@
+# Modelos pesados (ONNX, binarios)
+/TallerEjercicios/modelos/
+*.onnx
+
+# Gradle
+.gradle/
+**/build/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
