@@ -1,0 +1,17 @@
+POST http://localhost:9931/v1/chat/completions
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer no-key
+
+{
+  "model": "llama",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Que es llama.cpp?"
+    }
+  ],
+  "max_tokens": 256
+}
+
+###
