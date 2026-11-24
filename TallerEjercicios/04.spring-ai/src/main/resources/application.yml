@@ -1,0 +1,12 @@
+server:
+  port: 8090
+
+spring:
+  ai:
+    openai:
+      api-key: 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
+      base-url: https://api.groq.com/openai/v1
+      chat:
+        options:
+          model: openai/gpt-oss-120b
+
