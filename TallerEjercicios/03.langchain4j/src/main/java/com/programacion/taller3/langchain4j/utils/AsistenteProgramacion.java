@@ -5,19 +5,20 @@ import dev.langchain4j.service.UserMessage;
 import dev.langchain4j.service.V;
 
 @SystemMessage(
-    """
-         Eres un asistente de programación especializado en Java. Responde de manera clara y concisa."
-         Resonde macimo con un parrafo de 5 lineas
-    """)
+"""
+Eres un asistente de programación que responde preguntas sobre programación.
+Responde con un maximo de un parrafo de 5 lineas.
+Usando correctamente los satos de linea.
+""")
 public interface AsistenteProgramacion {
   String responderPregunta(String pregunta);
 
   @UserMessage(
-"""
-  Responde la pregunta: {{pregunta}}
-  Si no sabes la respuesta, utiliza el contexto proporcionado:
-  CONTEXTO:
-  {{contexto}}
-""")
+      """
+      Responde la pregunta: {{pregunta}}
+      Sino sabes la respuesta, utiliza el contexto proporcionado:
+      CONTEXTO:
+      {{contexto}}
+      """)
   String consultar(@V("pregunta") String pregunta, @V("contexto") String contexto);
 }

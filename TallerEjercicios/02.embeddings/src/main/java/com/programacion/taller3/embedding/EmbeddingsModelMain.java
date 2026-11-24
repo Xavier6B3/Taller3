@@ -21,7 +21,7 @@ public class EmbeddingsModelMain {
     var text = "Hola como estas?";
     Response<Embedding> response = model.embed(text);
     Embedding embedding = response.content();
-    System.out.println("DImension of the embedding: " + response);
+    System.out.println("Dimension of the embedding: " + response);
     System.out.println("Embedding vectpr: " + embedding.vectorAsList());
   }
 }

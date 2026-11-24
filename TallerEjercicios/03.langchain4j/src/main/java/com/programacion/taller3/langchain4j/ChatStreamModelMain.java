@@ -5,13 +5,11 @@ import dev.langchain4j.model.openai.OpenAiStreamingChatModel;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static com.programacion.taller3.langchain4j.ChatModelMain.*;
-
 public class ChatStreamModelMain {
-  public static void main() throws Exception {
+  public static void main(String[] args) throws Exception {
     var chatModel =
         OpenAiStreamingChatModel.builder()
-            .apiKey(ChatModelMain.KEY)
+            .apiKey(ChatModelMain.API_KEY)
             .baseUrl(ChatModelMain.BASE_URL)
             .modelName(ChatModelMain.MODEL)
             .build();

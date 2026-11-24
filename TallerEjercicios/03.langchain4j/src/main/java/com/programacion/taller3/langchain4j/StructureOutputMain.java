@@ -14,10 +14,10 @@ interface Extractor {
 
 public class StructureOutputMain {
 
-  static void main() {
+  public static void main(String[] args) {
     var chatModel =
         OpenAiChatModel.builder()
-            .apiKey(ChatModelMain.KEY)
+            .apiKey(ChatModelMain.API_KEY)
             .modelName(ChatModelMain.MODEL)
             .baseUrl(ChatModelMain.BASE_URL)
             .logRequests(true)
